@@ -1,0 +1,17 @@
+//- extends base.pug
+block title 
+  title registration page
+block append style 
+  link(rel="stylesheet", href="registration.css")
+block content
+  .container 
+    h1 fill this form our team will contact you 
+    .form 
+        form(action="/register" method="post")
+          input(type="text" name="name" id="name" placeholder="Enter your name")
+          input(type="number" name="number" id="number" placeholder="Enter your phone number")
+          input(type="email" name="email" id="email" placeholder="Enter your email")
+          input(type="password" name="password" id="pass" placeholder="Enter your password")          
+          input(type="password" name="cnfpassword" id="cnfpass" placeholder="Confirm your password")
+          button#btn 
+           | register now    

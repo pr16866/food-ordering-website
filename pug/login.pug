@@ -1,0 +1,17 @@
+//- extends base.pug footer 
+block title 
+  title login page 
+block append style 
+    link(rel='stylesheet' href='login.css')
+block content 
+  .login
+    form(action="/" method="post")
+      h2 Login Here
+      label(for='email') email:
+      input.form(type='email' name='email' placeholder='Username')
+      label(for='password') password:
+      input.form(type='password' name='password' placeholder='Password')
+      button#btn Login
+      p are you new here 
+        a(href="/register") register now    
+  

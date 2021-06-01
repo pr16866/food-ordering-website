@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.login {
+    width: 100vw;
+    height: 100vh;
+    background: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+  }
+
+  form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 330px;
+      height: 308px;
+      border: 4px solid black;
+      text-transform: capitalize;
+      background-color: black;
+      font-size: large;
+      font-weight: bold;
+      color: white;
+  }
+
+  .form {
+    width: 263px;
+    height: 42px;
+      font-size: 15px;
+      background: none;
+      text-align: center;
+      border: 2px solid rgb(149, 167, 245);
+      margin-bottom: 10px;
+      border-radius: 20px;
+      transition-property: all;
+      transition-duration: 0.5s;
+      color: white;
+      outline: none;
+      margin: 8px 0;
+
+  }
+
+  #btn {
+      cursor: pointer;
+      width: 109px;
+      height: 36px;
+      background: black;
+      border: 2px solid rgb(74, 233, 154);
+      color: white;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      outline: none;
+  }
+
+  .form:focus,
+  .form:hover {
+      width: 300px;
+
+      border-color: rgb(78, 228, 111);
+  }
+
+  #btn:hover {
+      background-color: rgb(3, 88, 29);
+  }
+  h2{
+    margin-bottom: 16px;
+  }
+  p{
+    color: white;
+    margin-top: 24px;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  a{
+    text-decoration: none;
+    color: chartreuse;
+  }

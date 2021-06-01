@@ -1,0 +1,47 @@
+//- extends base.pug
+
+block title
+    title Form 
+block append style     
+    link(href='//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet')
+    link(rel='stylesheet' href='registration.css')
+block content
+  .body
+    h2 Fill This Form Our Team Will Contact You
+    br
+    .form
+      form(action="/register" method="post" onsubmit='return validation()')
+        .name
+          | Name
+          input#name(type='text' name="name" placeholder='Enter your name')
+          i#i1.fa.fa-exclamation-circle
+          i#i2.fa.fa-check-circle
+          span#spn1
+        .email
+          | email
+          input#email(type='email' name="email" placeholder='Enter your email')
+          span#spn2
+          i#i3.fa.fa-exclamation-circle
+          i#i4.fa.fa-check-circle
+        .phn
+          | Phone
+          input#phn(type='number' name="number" placeholder='Enter your phone')
+          span#spn3
+          i#i5.fa.fa-exclamation-circle
+          i#i6.fa.fa-check-circle
+        .pass
+          | password
+          input#pass(type='password' name="password" placeholder='Enter your password')
+          span#spn4
+          i#i7.fa.fa-exclamation-circle
+          i#i8.fa.fa-check-circle
+        .cnfpass
+          | confirm password 
+          input#cnfpass(type='text' name="cnfpassword" placeholder='confirm your password')
+          span#spn5
+          i#i9.fa.fa-exclamation-circle
+          i#i10.fa.fa-check-circle
+        .btn
+          input#btn(type='submit' value='submit')
+        br
+    script(src='registration.js')
